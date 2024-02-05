@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="input.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <title>Tailwind</title>
+  </head>
+
+  <body class="bg-blue-50">
+    <!-- navbar -->
+    <nav class="navbar flex p-3 justify-between shadow-md bg-blue-50">
+      <div class="logo flex h-9 ml-1">
+        <img src="./assests/img/takshashila-logo.png" alt="" />
+        <div class="main-title text-3xl font-semibold ml-2">
+          <h1>Takshashila</h1>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <label for="checkbox_toggle" class="hamburger text-3xl md:hidden"
+          >&#9776;</label
+        >
+        <div class="menu hidden mt-2 md:block">
+          <div
+            class="flex font-semibold justify-between gap-x-8 text-xl text-gray-500"
+          >
+            <li class="capitalize hover:text-orange-600">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="capitalize hover:text-orange-600">
+              <a href="./pages/services.html">Services</a>
+            </li>
+            <li class="capitalize hover:text-orange-600">
+              <a href="">Team</a>
+            </li>
+
+            <li class="capitalize hover:text-orange-600">
+              <a class="hover:text-orange-600" href="./pages/services.html"
+                >Contact</a
+              >
+            </li>
+          </div>
+        </div>
+      </ul>
+
+      <div class="hidden md:block">
+        <div class="flex justify-around gap-x-2">
+          <div
+            class="border-2 py-2 px-5 rounded-xl border-solid border-orange-600 bg-orange-600 hover:bg-orange-800 text-center"
+          >
+            <h1 class="text-center text-sm text-white">sign up</h1>
+          </div>
+          <div
+            class="border-2 py-2 px-5 rounded-xl border-solid border-orange-600 hover:bg-black text-center"
+          >
+            <h1 class="text-orange-600 pb-1 text-sm">log in</h1>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Landing Section -->
+    <div class="landing border md:border-3 md:mt-4">
+      <div class="flex flex-col justify-center items-center md:flex-row">
+        <div class="landing-text lg:mb-16 md:ml-16">
+          <p
+            class="text-2xl text-center font-semibold capitalize mt-5 p-1.5 italic md:text-4xl md:-mt-10 lg:-mt-0 md:ml-10 md: md:not-italic md:font-sans leading-6  md:text-left"
+          >
+            in internet age We
+            <br />
+            must Learn
+
+            <span class="text-orange-600"> tomorrow’s </span>
+            <br />
+            <span class="text-purple-600"> skill today </span>
+          </p>
+
+          <p
+            class="hidden lg:block text-2xl text-wrap capitalize md:ml-11 text-black"
+          >
+            Ignite your knowledge and learn with takshashila
+          </p>
+
+          <div class="hidden  lg:flex gap-5 m-12">
+            <div
+              class="border-2 py-2 px-5 rounded-xl border-solid border-orange-600 bg-orange-600 hover:bg-orange-800 text-center"
+            >
+              <h1 class="text-center text-sm text-white">Join as teacher</h1>
+            </div>
+            <div
+              class="border-2 py-2 px-5 rounded-xl border-solid border-orange-600 hover:bg-black text-center"
+            >
+              <h1 class="text-orange-600 pb-1 text-sm">Join as learner</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="landing-animation -mt-10 md:w-1/2 lg:-mt-16 w-80 lg:w-1/2">
+          <lottie-player
+            src="https://assets3.lottiefiles.com/packages/lf20_xOYeRI45dN.json"
+            background="transparent"
+            speed="1"
+            style="width: auto; height: 100%"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+      </div>
+
+      <div class="flex lg:hidden  justify-around -mt-10 md:">
+        <div
+          class="border-2 py-2 px-5 rounded-xl border-solid border-orange-600 bg-orange-600 hover:bg-orange-800 text-center"
+        >
+          <h1 class="text-center text-sm text-white">Join as teacher</h1>
+        </div>
+        <div
+          class="border-2 py-2 px-5 rounded-xl border-solid border-orange-600 hover:bg-black text-center"
+        >
+          <h1 class="text-orange-600 pb-1 text-sm">Join as learner</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- our services -->
+    <div class="service flex flex-col lg:-mt-6">
+      <div
+        class="serv-title text-2xl text-center font-semibold capitalize mt-5  p-1.5 text-purple-600"
+      >
+        <h1>Our services</h1>
+      </div>
+      <div class="serv-container flex flex-wrap justify-center">
+        <div
+          class="serv-box flex flex-col m-5 bg-white p-4 rounded-3xl drop-shadow-xl border-b-4 border-indigo-500 max-w-80"
+        >
+          <img
+            src="./assests/img/carbon_data-structured.png"
+            class="ml-24 place-content-center w-1/4"
+            alt=""
+            srcset=""
+          />
+          <h1
+            class="text-2xl text-center font-semibold capitalize mt-5 p-1.5 text-black"
+          >
+            Data structure
+          </h1>
+          <p class="text-sm text-gray-400 text-center font-normal">
+            Data structures are the problem-solving pillars of coding. Learn all
+            the foundational knowledge about all of the popular data structure
+            that you need, to be well-versed in interviews.
+          </p>
+        </div>
+
+        <div
+          class="serv-box flex flex-col m-5 bg-white p-4 rounded-3xl drop-shadow-xl border-b-4 border-indigo-500 max-w-80"
+        >
+          <img
+            src="./assests/img/mdi_learn-outline.png"
+            class="ml-24 place-content-center w-1/4"
+            alt=""
+            srcset=""
+          />
+          <h1
+            class="text-2xl text-center font-semibold capitalize mt-5 p-1.5 text-black"
+          >
+            Placement Preparation
+          </h1>
+          <p class="text-sm text-gray-400 text-center font-normal">
+            Ace the placement interviews by being knowledgeable in all
+            well-known data structures, popular problem-solving methods, and
+            core computer sciences.
+          </p>
+        </div>
+
+        <div
+          class="serv-box flex flex-col m-5 bg-white p-4 rounded-3xl drop-shadow-xl border-b-4 border-indigo-500 max-w-80"
+        >
+          <img
+            src="./assests/img/lucide_list-todo.png"
+            class="ml-24 place-content-center h-1/4 w-1/4"
+            alt=""
+            srcset=""
+          />
+          <h1
+            class="text-2xl text-center font-semibold capitalize mt-5 p-1.5 text-black"
+          >
+            Hand Picked Question
+          </h1>
+          <p class="text-sm text-gray-400 text-center font-normal">
+            Get access to hand-picked coding interview questions across
+            categories & difficulty levels that will prepare you for every
+            interview you would encounter.
+          </p>
+        </div>
+        <div
+          class="serv-box flex flex-col m-5 bg-white p-4 rounded-3xl drop-shadow-xl border-b-4 border-indigo-500 max-w-80"
+        >
+          <img
+            src="./assests/img/icon-park-outline_endpoint-displacement.png"
+            class="ml-24 place-content-center h-1/3 w-1/4"
+            alt=""
+            srcset=""
+          />
+          <h1
+            class="text-2xl text-center font-semibold capitalize mt-3 p-1.5 text-black"
+          >
+            Curated Content
+          </h1>
+          <p class="text-sm text-gray-400 text-center font-normal">
+            Learn in-depth conceptual overviews, how to approach an algorithm,
+            how to implement it & how to optimize it.
+          </p>
+        </div>
+        <div
+          class="serv-box flex flex-col m-5 bg-white p-4 rounded-3xl drop-shadow-xl border-b-4 border-indigo-500 max-w-80"
+        >
+          <img
+            src="./assests/img/fluent_form-new-28-regular.png"
+            class="ml-24 place-content-center h-1/4 w-1/4"
+            alt=""
+            srcset=""
+          />
+          <h1
+            class="text-2xl text-center font-semibold capitalize mt-5 p-1.5 text-black"
+          >
+            Learn from the best
+          </h1>
+          <p class="text-sm text-gray-400 text-center font-normal">
+            Get access to lectures and get mentored by one of the best in the
+            market, Love Babbar.
+          </p>
+        </div>
+
+        <div
+          class="serv-box flex flex-col m-5 bg-white p-4 rounded-3xl drop-shadow-xl border-b-4 border-indigo-500 max-w-80"
+        >
+          <img
+            src="./assests/img/bxs_book-content.png"
+            class="ml-24 place-content-center h-1/4 w-1/4"
+            alt=""
+            srcset=""
+          />
+          <h1
+            class="text-2xl text-center font-semibold capitalize mt-5 p-1.5 text-black"
+          >
+            Learn Something new
+          </h1>
+          <p class="text-sm text-gray-400 text-center font-normal">
+            Learn new concepts daily, increase your productivity & reach your
+            full potential.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- top categories -->
+
+    <div class="service flex flex-col bg-white pb-7">
+      <div
+        class="serv-title text-2xl text-center font-semibold capitalize mt-5 p-1.5 text-purple-600"
+      >
+        <h1>top categories</h1>
+      </div>
+      <div
+        class="serv-container flex flex-wrap justify-center items-center flex-row"
+      >
+        <!-- box -->
+        <div
+          class="serv-box flex flex-col m-2 ml-0 bg-blue-50 p-2 rounded-xl drop-shadow-xl w-32 h-24 justify-center items-center"
+        >
+          <img src="./assests/img/art.png" class="w-1/3" alt="" srcset="" />
+          <h1
+            class="text-sm text-center font-medium capitalize p-1.5 text-black"
+          >
+            Art & design
+          </h1>
+        </div>
+
+        <div
+          class="serv-box flex flex-col m-2  bg-blue-50 p-2 rounded-xl drop-shadow-xl w-32 h-24 justify-center items-center"
+        >
+          <img src="./assests/img/dev.png" class="w-1/3" alt="" srcset="" />
+          <h1
+            class="text-sm text-center font-medium capitalize p-1.5 text-black"
+          >
+            development
+          </h1>
+        </div>
+
+        <div
+          class="serv-box flex flex-col m-2  bg-blue-50 p-2 rounded-xl drop-shadow-xl w-32 h-24 justify-center items-center "
+        >
+          <img src="./assests/img/comm.png" class="w-1/2" alt="" srcset="" />
+          <h1
+            class="text-sm text-center font-medium capitalize p-1.5 text-black"
+          >
+            communication
+          </h1>
+        </div>
+
+        <div
+          class="serv-box flex flex-col m-2 ml-0 bg-blue-50 p-2 rounded-xl drop-shadow-xl w-32 h-24 justify-center items-center"
+        >
+          <img src="./assests/img/photo.png" class="w-1/3" alt="" srcset="" />
+          <h1
+            class="text-sm text-center font-medium capitalize p-1.5 text-black"
+          >
+            photography
+          </h1>
+        </div>
+
+        <div
+          class="serv-box flex flex-col m-2 ml-0 bg-blue-50 p-2 rounded-xl drop-shadow-xl w-32 h-24 justify-center items-center"
+        >
+          <img src="./assests/img/market.png" class="w-1/3" alt="" srcset="" />
+          <h1
+            class="text-sm text-center font-medium capitalize p-1.5 text-black"
+          >
+            marketing
+          </h1>
+        </div>
+
+        <div
+          class="serv-box flex flex-col m-2 ml-0 bg-blue-50 p-2 rounded-xl drop-shadow-xl w-32 h-24 justify-center items-center"
+        >
+          <img src="./assests/img/bank.png" class="w-1/3" alt="" srcset="" />
+          <h1
+            class="text-sm text-center font-medium capitalize p-1.5 text-black"
+          >
+            finance & bank
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- testimonials -->
+
+    <section class="text-gray-400 bg-blue-50 body-font">
+      <div
+        class="serv-title text-2xl text-center font-semibold capitalize p-1.5 text-purple-600"
+      >
+        <h1>Testimonals</h1>
+      </div>
+      <div class="container px-5 py-10 mx-auto">
+        <div class="flex flex-wrap -m-4">
+          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+            <div class="h-full text-center">
+              <img
+                alt="testimonial"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10"
+                src="assests/img/fu1.png"
+              />
+              <p class="leading-relaxed">
+                Edison bulb retro cloud bread echo park, helvetica stumptown
+                taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee
+                ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut
+                adaptogen squid fanny pack vaporware.
+              </p>
+              <span
+                class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"
+              ></span>
+              <h2
+                class="text-white font-medium title-font tracking-wider text-sm"
+              >
+                HOLDEN CAULFIELD
+              </h2>
+              <p class="text-gray-500">Senior Product Designer</p>
+            </div>
+          </div>
+          <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+            <div class="h-full text-center">
+              <img
+                alt="testimonial"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-gray-800 bg-opacity-10"
+                src="./assests/img/fu2.png"
+              />
+              <p class="leading-relaxed">
+                Edison bulb retro cloud bread echo park, helvetica stumptown
+                taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee
+                ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut
+                adaptogen squid fanny pack vaporware.
+              </p>
+              <span
+                class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"
+              ></span>
+              <h2
+                class="text-white font-medium title-font tracking-wider text-sm"
+              >
+                ALPER KAMU
+              </h2>
+              <p class="text-gray-500">UI Develeoper</p>
+            </div>
+          </div>
+          <div class="lg:w-1/3 lg:mb-0 p-4">
+            <div class="h-full text-center">
+              <img
+                alt="testimonial"
+                class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-800 bg-opacity-10"
+                src="./assests/img/fu3.png"
+              />
+              <p class="leading-relaxed">
+                Edison bulb retro cloud bread echo park, helvetica stumptown
+                taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee
+                ennui shaman taiyaki vape DIY tote bag drinking vinegar cronut
+                adaptogen squid fanny pack vaporware.
+              </p>
+              <span
+                class="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"
+              ></span>
+              <h2
+                class="text-white font-medium title-font tracking-wider text-sm"
+              >
+                HENRY LETHAM
+              </h2>
+              <p class="text-gray-500">CTO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer  -->
+
+    <footer
+      class="bg-purple-600 relative min-h-[280px] w-full overflow-hidden text-[#e8e6e3] py-8 px-8 font-rubik capitalize"
+    >
+      <div class="max-w-maxScreen mx-auto">
+        <div
+          class="flex flex-col items-center md:items-start gap-4 md:flex-row md:justify-around md:gap-0 my-6"
+        >
+          <div class="flex flex-col">
+            <div
+              class="flex flex-col px-4 text-center md:text-start md:flex-row"
+            >
+              <img
+                src="./assests/img/takshashila-logo.png"
+                class="max-h-20 ml-11 md:ml-0 max-w-20"
+              />
+
+              <div class="main-title text-3xl font-semibold ml-2">
+                <h1>Takshashila</h1>
+              </div>
+            </div>
+
+            <div>
+              <p
+                class="text-xl md:text-2xl text-center font-semibold capitalize mt-5 p-1.5 italic"
+              >
+                in internet age We
+                <br />
+                must Learn tomorrow’s
+                <br />
+                skill today
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <h1
+              class="mb-2 md:mb-6 font-bold capitalize text-center md:text-left"
+            >
+              Quick Link
+            </h1>
+            <div class="flex flex-col gap-y-3">
+              <h1 class="capitalize">teacher</h1>
+              <h1 class="capitalize">students</h1>
+              <h1 class="capitalize">courses</h1>
+              <h1 class="capitalize">videos</h1>
+            </div>
+          </div>
+
+          <div class="flex flex-col justify-center items-center">
+            <h1 class="mb-2 md:mb-6 font-bold text-center md:text-left">
+              useful Link
+            </h1>
+            <div class="flex flex-col gap-y-3 ml-5">
+              <h1 class="">help line</h1>
+              <h1 class="">profile</h1>
+              <h1 class="">top courses</h1>
+              <h1 class="">policy</h1>
+            </div>
+          </div>
+
+          <div class="hidden h-[190px] w-[1px] bg-brColor md:block"></div>
+          <div class="flex flex-col text-center text-base md:text-left">
+            <h1 class="mb-2 md:mb-6 font-bold text-center md:text-left">
+              contact
+            </h1>
+            <h1 class="">takshashila@gmail.com</h1>
+ 
+            <div class="image flex justify-center items-center">
+              <img src="./assests/img/logos_facebook.png" class="h-8 mr-1 mt-2 " alt="" /><img
+                src="./assests/img/skill-icons_twitter.png" class="h-8 mr-1 mt-2 "
+                alt=""
+              /><img src="./assests/img/logos_whatsapp-icon.png" class="h-8 mr-1 mt-2 " alt="" /><img
+                src="./assests/img/skill-icons_instagram.png" class="h-8 mr-1 mt-2 "
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-3 text-base text-center border-t border-brColor pt-3">
+          <h1 class="">copyright 2023 | all rights reserved</h1>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
